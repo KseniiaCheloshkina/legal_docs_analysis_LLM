@@ -131,7 +131,6 @@ For reasoning follow these steps:
 3 - Apply multipliers to base sum to get final travel limit (like 2500 * 1.3)
 
 To get the final answer use the following format:
-Question: the input question you must answer
 Thought: you should always think about what to do
 Action: the action to take, should be one of [{tool_names}]
 Action Input: the input to the action

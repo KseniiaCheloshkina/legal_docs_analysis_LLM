@@ -40,8 +40,6 @@ def word_to_str(path: str):
     splitted_paragraphs = full_text.split("\n\n")
     # remove empty chunks
     splitted_paragraphs = [el for el in splitted_paragraphs if len(el) > 0]
-    # mean_len = sum([len(el) for el in splitted_paragraphs]) / len(splitted_paragraphs)
-    # print(f"mean_len of chunk is {mean_len}")
     # merge two subsequent chunks if very short (usually - headings)
     final_chunks = []
     cur_chunk = ""
@@ -89,20 +87,16 @@ def extract_from_chunk(chunks: List[str], doc_name: str):
     return entities
 
 
-def full_extraction(path_to_file):
-    splitted_paragraphs = word_to_str("data/Contract + Amendment example v3 .docx")
+def full_extraction(path_to_file: str):
+    splitted_paragraphs = word_to_str(path_to_file)
     # split on 2 documents
     second_doc_name = "Amendment to the Service Agreement Regarding Travel Expenses"
     amendment_chunk_start = [
         (i, el) for i, el in enumerate(splitted_paragraphs) if second_doc_name in el
     ][0]
-    print(
-        amendment_chunk_start
-    )  # [(16, '\n\nAmendment to the Service Agreement Regarding Travel Expenses')]
     start_pos_in_chunk = (
         amendment_chunk_start[1].strip().replace("\n\n", "").find(second_doc_name)
     )
-    print(start_pos_in_chunk)
     service_agreement_chunks = splitted_paragraphs[: amendment_chunk_start[0]]
     amendment_chunks = splitted_paragraphs[amendment_chunk_start[0] + 1 :]
     if start_pos_in_chunk != 0:

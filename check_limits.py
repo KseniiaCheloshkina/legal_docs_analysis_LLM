@@ -17,15 +17,12 @@ load_dotenv(find_dotenv())
 
 
 def create_retriever():
-    # load the document and split it into chunks
     loader = TextLoader("data/rules.txt")
     documents = loader.load()
 
-    # split it into chunks
     text_splitter = CharacterTextSplitter(chunk_size=200, chunk_overlap=0)
     docs = text_splitter.split_documents(documents)
 
-    # create the open-source embedding function
     embedding_function = SentenceTransformerEmbeddings(model_name="all-MiniLM-L6-v2")
 
     # load it into Chroma
@@ -33,7 +30,7 @@ def create_retriever():
     # query = "Travel to New York"
     # docs = db.similarity_search(query)
     # print(docs[0].page_content)
-    # print(docs)
+
     retriever = db.as_retriever()
     tool = create_retriever_tool(
         retriever,
@@ -58,18 +55,18 @@ def initialize_agent_validator(retriever):
         verbose=True,
         tools=retriever,
         handle_parsing_errors=True,
-        max_iterations=5,
+        max_iterations=7,
     )
     return agent_executor
 
 
-PROCESS_SUMS = lambda x: x.replace("$", "").replace(",", "")
+PROCESS_SUMS = lambda x: x.replace("$", "").replace("USD", "").replace(",", "").replace("\\[", "").replace("\n", "").strip()
 
 
 if __name__ == "__main__":
     tools = create_retriever()
     agent_executor = initialize_agent_validator(tools)
-    # condition = "Client workshop in Silicon Valley"
+    # example
     condition = "Sales training in Dubai during peak tourist season"
     given_sum = "$2,700"
     result = agent_executor.invoke({"input": QUESTION.format(conditions=condition)})

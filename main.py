@@ -2,6 +2,7 @@ from fastapi import FastAPI, File, UploadFile
 from fastapi.responses import JSONResponse
 from dotenv import load_dotenv, find_dotenv
 import pandas as pd
+import re
 
 from extractor import full_extraction
 from check_limits import create_retriever, initialize_agent_validator, PROCESS_SUMS
@@ -10,6 +11,9 @@ from prompts import QUESTION
 load_dotenv(find_dotenv())
 
 app = FastAPI()
+
+retriever = create_retriever()
+agent_executor = initialize_agent_validator(retriever)
 
 
 @app.post("/extract")
@@ -34,22 +38,10 @@ async def validate(file: UploadFile = File(...)):
             return JSONResponse(
                 content={"error": "No field 'Amount' in file"}, status_code=400
             )
-        retriever = create_retriever()
-        agent_executor = initialize_agent_validator(retriever)
         output_values = []
         for idx, row in df.iterrows():
             condition = row["Task Description"]
             given_sum = row["Amount"]
-            try:
-                price = PROCESS_SUMS(given_sum)
-                price = int(price)
-            except:
-                return JSONResponse(
-                    content={
-                        "error": f"Error in price conversion to int (row {idx}, value {given_sum}). Check your file"
-                    },
-                    status_code=400,
-                )
 
             # predict
             bad_answer = True
@@ -67,13 +59,29 @@ async def validate(file: UploadFile = File(...)):
                     bad_answer = False
                 attempts += 1
 
+            decision = None
             if not bad_answer:
-                limit = PROCESS_SUMS(result.split(" ")[0])
-                if int(limit) < price:
-                    decision = f"Prohibited. Current cost limit: {result} which is lower than current price {price}"
-                else:
-                    decision = f"Allowed. Current cost limit: {result} which is higher than current price {price}"
+                limit = PROCESS_SUMS(result).strip().split(" ")[0]
+                try:
+                    price = PROCESS_SUMS(given_sum)
+                    price = int(price)
+                except:
+                    decision = f"Unknown (because cant parse current price from doc - {given_sum}). Current cost limit: {result}"
+                if decision is None:
+                    try:
+                        limit = int(limit)
+                        if limit < price:
+                            decision = f"Prohibited. Current cost limit: {result} which is lower than current price {price}"
+                        else:
+                            decision = f"Allowed. Current cost limit: {result} which is higher than current price {price}"
+                    except:
+                        print(f"Failed to extract limit from {limit}, full text {result}")
+                        decision = f"Unknown. Current cost limit: {result}"
 
+            if isinstance(limit, str):
+                limit = "unknown"
+            if limit == "unknown":
+                decision = "Failed to make decision"
             output_values.append(
                 {
                     "condition": condition,
@@ -82,8 +90,6 @@ async def validate(file: UploadFile = File(...)):
                     "decision": decision,
                 }
             )
-            if idx > 2:
-                break
         return JSONResponse(content={"result": output_values})
     else:
         return JSONResponse(content={"error": "Invalid file type"}, status_code=400)
