@@ -1,0 +1,440 @@
+[
+  {
+    "term_name": "agreement_title",
+    "term_value": "Service Agreement",
+    "contract_section": "common_terms",
+    "source": "Contract"
+  },
+  {
+    "term_name": "contractor_company_name",
+    "term_value": "GlobalService LLC",
+    "contract_section": "common_terms",
+    "source": "Contract"
+  },
+  {
+    "term_name": "contractor_ceo",
+    "term_value": "John Doe",
+    "contract_section": "common_terms",
+    "source": "Contract"
+  },
+  {
+    "term_name": "client_company_name",
+    "term_value": "ClientProject Inc.",
+    "contract_section": "common_terms",
+    "source": "Contract"
+  },
+  {
+    "term_name": "client_ceo",
+    "term_value": "Jane Smith",
+    "contract_section": "common_terms",
+    "source": "Contract"
+  },
+  {
+    "term_name": "services",
+    "term_value": "software development",
+    "contract_section": "1",
+    "source": "Contract"
+  },
+  {
+    "term_name": "client_payment_agreement",
+    "term_value": "accept and pay",
+    "contract_section": "1",
+    "source": "Contract"
+  },
+  {
+    "term_name": "third_parties_involvement",
+    "term_value": "without notifying the Client",
+    "contract_section": "2.1",
+    "source": "Contract"
+  },
+  {
+    "term_name": "client_provide_information",
+    "term_value": "necessary information",
+    "contract_section": "2.2",
+    "source": "Contract"
+  },
+  {
+    "term_name": "use_confidential_information",
+    "term_value": "not related to the execution",
+    "contract_section": "2.3",
+    "source": "Contract"
+  },
+  {
+    "term_name": "total_fee",
+    "term_value": "USD 100,000",
+    "contract_section": "3.1",
+    "source": "Contract"
+  },
+  {
+    "term_name": "payment_stages",
+    "term_value": "50% upfront",
+    "contract_section": "3.2",
+    "source": "Contract"
+  },
+  {
+    "term_name": "payment_stages",
+    "term_value": "50% upon completion",
+    "contract_section": "3.2",
+    "source": "Contract"
+  },
+  {
+    "term_name": "payment_delay_period",
+    "term_value": "more than 10 days",
+    "contract_section": "3.3",
+    "source": "Contract"
+  },
+  {
+    "term_name": "contractor_right_on_delay",
+    "term_value": "suspend work",
+    "contract_section": "3.3",
+    "source": "Contract"
+  },
+  {
+    "term_name": "pre-approval_requirement",
+    "term_value": "must be pre-approved",
+    "contract_section": "4.1",
+    "source": "Contract"
+  },
+  {
+    "term_name": "total_expenses_cap",
+    "term_value": "USD 2,500",
+    "contract_section": "4.2",
+    "source": "Contract"
+  },
+  {
+    "term_name": "daily_expenses_cap",
+    "term_value": "USD 500",
+    "contract_section": "4.2",
+    "source": "Contract"
+  },
+  {
+    "term_name": "domestic_flights_class",
+    "term_value": "economy class",
+    "contract_section": "4.3",
+    "source": "Contract"
+  },
+  {
+    "term_name": "international_flights_class",
+    "term_value": "business class",
+    "contract_section": "4.3",
+    "source": "Contract"
+  },
+  {
+    "term_name": "accommodation_standard",
+    "term_value": "approved hotels",
+    "contract_section": "4.4",
+    "source": "Contract"
+  },
+  {
+    "term_name": "high-cost_locations_budget_increase",
+    "term_value": "up to 20%",
+    "contract_section": "4.5.1",
+    "source": "Contract"
+  },
+  {
+    "term_name": "seasonal_price_increase",
+    "term_value": "up to 10%",
+    "contract_section": "4.5.2",
+    "source": "Contract"
+  },
+  {
+    "term_name": "weather_allowance",
+    "term_value": "up to USD 300",
+    "contract_section": "4.6.1",
+    "source": "Contract"
+  },
+  {
+    "term_name": "health_safety_expenses",
+    "term_value": "covered",
+    "contract_section": "4.6.2",
+    "source": "Contract"
+  },
+  {
+    "term_name": "environmental_compliance",
+    "term_value": "minimize environmental impact",
+    "contract_section": "4.7.1",
+    "source": "Contract"
+  },
+  {
+    "term_name": "legal_compliance",
+    "term_value": "adhere to all applicable laws",
+    "contract_section": "4.7.2",
+    "source": "Contract"
+  },
+  {
+    "term_name": "expense_reporting_deadline",
+    "term_value": "within 10 days",
+    "contract_section": "4.8.1",
+    "source": "Contract"
+  },
+  {
+    "term_name": "audit_rights",
+    "term_value": "right to audit travel expenses",
+    "contract_section": "4.8.2",
+    "source": "Contract"
+  },
+  {
+    "term_name": "confidentiality_obligation",
+    "term_value": "strict confidence",
+    "contract_section": "5.1",
+    "source": "Contract"
+  },
+  {
+    "term_name": "breach_consequences",
+    "term_value": "legal remedies",
+    "contract_section": "5.2",
+    "source": "Contract"
+  },
+  {
+    "term_name": "intellectual_property_rights",
+    "term_value": "belong to the Client",
+    "contract_section": "6.1",
+    "source": "Contract"
+  },
+  {
+    "term_name": "license_type",
+    "term_value": "non-exclusive",
+    "contract_section": "6.2",
+    "source": "Contract"
+  },
+  {
+    "term_name": "license_scope",
+    "term_value": "worldwide",
+    "contract_section": "6.2",
+    "source": "Contract"
+  },
+  {
+    "term_name": "license_rights",
+    "term_value": "use, modify, and distribute",
+    "contract_section": "6.2",
+    "source": "Contract"
+  },
+  {
+    "term_name": "termination_notice_period",
+    "term_value": "30-day written notice",
+    "contract_section": "7.1",
+    "source": "Contract"
+  },
+  {
+    "term_name": "breach_correction_period",
+    "term_value": "15-day notice period",
+    "contract_section": "7.1",
+    "source": "Contract"
+  },
+  {
+    "term_name": "post_termination_obligation",
+    "term_value": "handed over to the Client",
+    "contract_section": "7.2",
+    "source": "Contract"
+  },
+  {
+    "term_name": "post_termination_payment",
+    "term_value": "outstanding payments must be settled",
+    "contract_section": "7.2",
+    "source": "Contract"
+  },
+  {
+    "term_name": "contractor_liability_limit",
+    "term_value": "total fee paid",
+    "contract_section": "8.1",
+    "source": "Contract"
+  },
+  {
+    "term_name": "no_indirect_damages_liability",
+    "term_value": "neither party",
+    "contract_section": "8.2",
+    "source": "Contract"
+  },
+  {
+    "term_name": "comply_laws",
+    "term_value": "all applicable laws",
+    "contract_section": "9.1",
+    "source": "Contract"
+  },
+  {
+    "term_name": "client_software_responsibility",
+    "term_value": "does not violate any legal regulations",
+    "contract_section": "9.2",
+    "source": "Contract"
+  },
+  {
+    "term_name": "modification_validity",
+    "term_value": "signed by both parties",
+    "contract_section": "10.1",
+    "source": "Contract"
+  },
+  {
+    "term_name": "scope_amendments",
+    "term_value": "written amendment",
+    "contract_section": "10.2",
+    "source": "Contract"
+  },
+  {
+    "term_name": "governing_law",
+    "term_value": "laws of the State of New York",
+    "contract_section": "11.1",
+    "source": "Contract"
+  },
+  {
+    "term_name": "dispute_resolution",
+    "term_value": "arbitration in New York, NY",
+    "contract_section": "11.2",
+    "source": "Contract"
+  },
+  {
+    "term_name": "scope_of_work",
+    "term_value": "develop, test, and deploy software",
+    "contract_section": "12.1",
+    "source": "Contract"
+  },
+  {
+    "term_name": "development_standards",
+    "term_value": "high industry standards",
+    "contract_section": "12.2",
+    "source": "Contract"
+  },
+  {
+    "term_name": "testing_and_quality_assurance",
+    "term_value": "rigorous testing and quality assurance",
+    "contract_section": "12.2",
+    "source": "Contract"
+  },
+  {
+    "term_name": "delivery_milestones",
+    "term_value": "milestones set forth in the project plan",
+    "contract_section": "12.3",
+    "source": "Contract"
+  },
+  {
+    "term_name": "implementation_assistance",
+    "term_value": "assist with the implementation",
+    "contract_section": "12.3",
+    "source": "Contract"
+  },
+  {
+    "term_name": "amendment_part_of_agreement",
+    "term_value": "Service Agreement",
+    "contract_section": "common_terms",
+    "source": "Amendment"
+  },
+  {
+    "term_name": "agreement_parties",
+    "term_value": "GlobalService LLC, ClientProject Inc.",
+    "contract_section": "common_terms",
+    "source": "Amendment"
+  },
+  {
+    "term_name": "globalservice_ceo",
+    "term_value": "John Doe",
+    "contract_section": "common_terms",
+    "source": "Amendment"
+  },
+  {
+    "term_name": "clientproject_ceo",
+    "term_value": "Jane Smith",
+    "contract_section": "common_terms",
+    "source": "Amendment"
+  },
+  {
+    "term_name": "original_agreement_date",
+    "term_value": "[Insert Date of Main Agreement]",
+    "contract_section": "common_terms",
+    "source": "Amendment"
+  },
+  {
+    "term_name": "purpose",
+    "term_value": "introduce complex multi-factor adjustments",
+    "contract_section": "common_terms",
+    "source": "Amendment"
+  },
+  {
+    "term_name": "policy_management",
+    "term_value": "fair and efficient",
+    "contract_section": "common_terms",
+    "source": "Amendment"
+  },
+  {
+    "term_name": "policy_scope",
+    "term_value": "corporate travel expenses",
+    "contract_section": "common_terms",
+    "source": "Amendment"
+  },
+  {
+    "term_name": "amendments_section",
+    "term_value": "Travel Expense Policy",
+    "contract_section": "1.",
+    "source": "Amendment"
+  },
+  {
+    "term_name": "introduction_conditions",
+    "term_value": "Multi-Factor Adjustment",
+    "contract_section": "1.1",
+    "source": "Amendment"
+  },
+  {
+    "term_name": "night_weekend_multiplier",
+    "term_value": "1.1",
+    "contract_section": "common_terms",
+    "source": "Amendment"
+  },
+  {
+    "term_name": "peak_season_multiplier",
+    "term_value": "1.2",
+    "contract_section": "common_terms",
+    "source": "Amendment"
+  },
+  {
+    "term_name": "high_cost_location_multiplier",
+    "term_value": "1.2",
+    "contract_section": "common_terms",
+    "source": "Amendment"
+  },
+  {
+    "term_name": "unscheduled_travel_multiplier",
+    "term_value": "1.3",
+    "contract_section": "common_terms",
+    "source": "Amendment"
+  },
+  {
+    "term_name": "notice_period",
+    "term_value": "48 hours",
+    "contract_section": "common_terms",
+    "source": "Amendment"
+  },
+  {
+    "term_name": "base_approved_travel_budget",
+    "term_value": "$2,500",
+    "contract_section": "1.2",
+    "source": "Amendment"
+  },
+  {
+    "term_name": "night_weekend_travel_multiplier",
+    "term_value": "1.1",
+    "contract_section": "common_terms",
+    "source": "Amendment"
+  },
+  {
+    "term_name": "seasonal_location_adjustment",
+    "term_value": "1.2",
+    "contract_section": "common_terms",
+    "source": "Amendment"
+  },
+  {
+    "term_name": "urgency_multiplier",
+    "term_value": "1.3",
+    "contract_section": "common_terms",
+    "source": "Amendment"
+  },
+  {
+    "term_name": "failure_to_comply",
+    "term_value": "violation of the corporate travel policy",
+    "contract_section": "2",
+    "source": "Amendment"
+  },
+  {
+    "term_name": "consequences",
+    "term_value": "disciplinary actions and potential financial repercussions",
+    "contract_section": "2",
+    "source": "Amendment"
+  }
+]
