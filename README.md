@@ -4,6 +4,11 @@ Main code: `extractor.py`
 ### 2 - Validate travel costs
 Main code: `check_limits.py`
 
+
+## App
+The app is available on
+https://legal-docs-coluyclhiq-uc.a.run.app/ 
+
 ## How to
 
 How to run locally (without Docker):
