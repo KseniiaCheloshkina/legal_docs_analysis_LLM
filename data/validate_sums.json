@@ -1,0 +1,152 @@
+[
+  {
+    "condition": "Client workshop in Silicon Valley",
+    "requested_sum": "$2,400",
+    "limit": 3000,
+    "decision": "Allowed. Current cost limit: $3,000, because $2,500 * 1.2 (High-Cost Location Multiplier) = $3,000 which is higher than current price 2400"
+  },
+  {
+    "condition": "Sales training in Dubai during peak tourist season",
+    "requested_sum": "$2,700",
+    "limit": 3300,
+    "decision": "Allowed. Current cost limit: $3,300, because $2,500 * 1.2 (Seasonal and Location-Based Adjustments) * 1.1 (Seasonal Price Fluctuations) = $3,300 which is higher than current price 2700"
+  },
+  {
+    "condition": "Research trip to remote part of Norway (booked last-minute)",
+    "requested_sum": "$3,500",
+    "limit": 3550,
+    "decision": "Allowed. Current cost limit: $3,550, because $2,500 * 1.3 (Urgency Multiplier) + $300 (Weather and Environmental Allowance) = $3,550 which is higher than current price 3500"
+  },
+  {
+    "condition": "Conference in New York with weekend travel",
+    "requested_sum": "$3,000",
+    "limit": 3300,
+    "decision": "Allowed. Current cost limit: $3,300, because $2,500 * 1.2 (Location-Based Adjustment for New York) * 1.1 (Night and Weekend Travel Multiplier) = $3,300. which is higher than current price 3000"
+  },
+  {
+    "condition": "Team building event in Colorado",
+    "requested_sum": "$2,200",
+    "limit": 2800,
+    "decision": "Allowed. Current cost limit: $2800, because $2500 base budget plus $300 additional allowance for severe weather conditions or challenging environments. which is higher than current price 2200"
+  },
+  {
+    "condition": "Marketing tour across Asia (planned and pre-approved)",
+    "requested_sum": "$9,500",
+    "limit": 2750,
+    "decision": "Prohibited. Current cost limit: $2750, because $2500 * 1.1 (Seasonal Price Fluctuations) = $2750 which is lower than current price 9500"
+  },
+  {
+    "condition": "Strategy retreat in the Swiss Alps during winter",
+    "requested_sum": "$2,400",
+    "limit": 3300,
+    "decision": "Allowed. Current cost limit: USD 3,300, because USD 2,500 (base limit) * 1.2 (Seasonal and Location-Based Adjustments) + USD 300 (Weather and Environmental Allowance) = USD 3,300 which is higher than current price 2400"
+  },
+  {
+    "condition": "Field research in Amazon rainforest (urgent and rainy season)",
+    "requested_sum": "$3,000",
+    "limit": 3550,
+    "decision": "Allowed. Current cost limit: $3,550, because $2,500 * 1.3 (Urgency Multiplier) + $300 (Environmental Consideration Allowance) = $3,550 which is higher than current price 3000"
+  },
+  {
+    "condition": "Trade show participation in Florida during hurricane season",
+    "requested_sum": "$3,500",
+    "limit": 2800,
+    "decision": "Prohibited. Current cost limit: $2800, because $2500 base limit + $300 additional allowance for travel during hurricane season = $2800. which is lower than current price 3500"
+  },
+  {
+    "condition": "Executive meeting in London during a bank holiday weekend",
+    "requested_sum": "$3,500",
+    "limit": 3300,
+    "decision": "Prohibited. Current cost limit: $3,300, because $2,500 * 1.1 (Night and Weekend Travel Multiplier) * 1.2 (Seasonal and Location-Based Adjustments) = $3,300 which is lower than current price 3500"
+  },
+  {
+    "condition": "Development workshop in Tokyo during Golden Week",
+    "requested_sum": "$2,550",
+    "limit": 3000,
+    "decision": "Allowed. Current cost limit: $3,000, because $2,500 * 1.2 (Seasonal and Location-Based Adjustments for Golden Week) = $3,000 which is higher than current price 2550"
+  },
+  {
+    "condition": "Client visit to manufacturing site in Germany",
+    "requested_sum": "$2,800",
+    "limit": 2500,
+    "decision": "Prohibited. Current cost limit: $2500, because the base travel budget for a single trip is USD 2,500, and no specific multipliers have been identified for this client visit to a manufacturing site in Germany based on the given information. which is lower than current price 2800"
+  },
+  {
+    "condition": "Product launch prep in California, planned one month in advance",
+    "requested_sum": "$7,500",
+    "limit": 3000,
+    "decision": "Prohibited. Current cost limit: $3000, because $2500 * 1.2 (High-Cost Location Multiplier) = $3000 which is lower than current price 7500"
+  },
+  {
+    "condition": "Annual review meeting in Singapore",
+    "requested_sum": "$2,300",
+    "limit": "unknown",
+    "decision": "Failed to make decision"
+  },
+  {
+    "condition": "Investor roadshow in multiple US cities (urgent and pre-approved)",
+    "requested_sum": "$10,500",
+    "limit": 4290,
+    "decision": "Prohibited. Current cost limit: $4290, because $2500 * 1.3 (Urgency Multiplier) * 1.2 (High-Cost Locations Multiplier) * 1.1 (Seasonal Price Fluctuations Multiplier) = $4290 which is lower than current price 10500"
+  },
+  {
+    "condition": "Site survey for new plant in Iceland during winter",
+    "requested_sum": "$3,800",
+    "limit": 3300,
+    "decision": "Prohibited. Current cost limit: $3,300, because $2,500 * 1.2 (Location-Based Adjustment) + $300 (Weather and Environmental Considerations allowance) = $3,300. which is lower than current price 3800"
+  },
+  {
+    "condition": "Negotiation meeting in high-risk area in Middle East (urgent)",
+    "requested_sum": "$6,000",
+    "limit": 3250,
+    "decision": "Prohibited. Current cost limit: $3,250, because $2,500 (base expense limit) * 1.3 (urgency multiplier) = $3,250 which is lower than current price 6000"
+  },
+  {
+    "condition": "Workshop in Las Vegas during a major conference",
+    "requested_sum": "$3,000",
+    "limit": 3000,
+    "decision": "Allowed. Current cost limit: $3000, because $2500 * 1.2 (Seasonal and Location-Based Adjustments for major conferences) = $3000 which is higher than current price 3000"
+  },
+  {
+    "condition": "Client meeting in Paris during Fashion Week",
+    "requested_sum": "$3,200",
+    "limit": 3300,
+    "decision": "Allowed. Current cost limit: $3,300, because $2,500 * 1.2 (Seasonal and Location-Based Adjustment) * 1.1 (Seasonal Price Fluctuations) = $3,300. which is higher than current price 3200"
+  },
+  {
+    "condition": "Engineering team offsite in remote Alaska in January",
+    "requested_sum": "$5,000",
+    "limit": 2800,
+    "decision": "Prohibited. Current cost limit: $2800, because $2500 (base expenses limit) + $300 (additional allowance for severe weather conditions) = $2800 which is lower than current price 5000"
+  },
+  {
+    "condition": "Business development trip to new markets in Africa",
+    "requested_sum": "$2,400",
+    "limit": 2800,
+    "decision": "Allowed. Current cost limit: $2,800, because the base limit is $2,500 and an additional allowance of $300 for travel to challenging environments can be applied. which is higher than current price 2400"
+  },
+  {
+    "condition": "Product testing in the Sahara Desert during summer",
+    "requested_sum": "$3,800",
+    "limit": 3080,
+    "decision": "Prohibited. Current cost limit: $3,080, because $2,500 (base travel budget) + $300 (severe weather allowance) + $280 (10% seasonal price fluctuation adjustment) = $3,080 which is lower than current price 3800"
+  },
+  {
+    "condition": "Quarterly executive strategy meeting in Hawaii",
+    "requested_sum": "$4,000",
+    "limit": 3000,
+    "decision": "Prohibited. Current cost limit: $3,000, because $2,500 * 1.2 (Seasonal and Location Adjustment for high-cost location) = $3,000 which is lower than current price 4000"
+  },
+  {
+    "condition": "Humanitarian aid project in a high-risk area",
+    "requested_sum": "$6,000",
+    "limit": 2800,
+    "decision": "Prohibited. Current cost limit: $2,800, because $2,500 (base expense limit) + $300 (additional allowance for challenging environments) = $2,800. which is lower than current price 6000"
+  },
+  {
+    "condition": "Internal training session in New York City over a holiday weekend",
+    "requested_sum": "$2,800",
+    "limit": 3300,
+    "decision": "Allowed. Current cost limit: USD 3,300, because USD 2,500 * 1.2 (High-Cost Location Multiplier) * 1.1 (Weekend Travel Multiplier) = USD 3,300 which is higher than current price 2800"
+  }
+]

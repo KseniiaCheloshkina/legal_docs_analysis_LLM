@@ -1,8 +1,9 @@
+import time
 from fastapi import FastAPI, File, UploadFile
 from fastapi.responses import JSONResponse
 from dotenv import load_dotenv, find_dotenv
 import pandas as pd
-import re
+import json
 
 from extractor import full_extraction
 from check_limits import create_retriever, initialize_agent_validator, PROCESS_SUMS
@@ -90,6 +91,9 @@ async def validate(file: UploadFile = File(...)):
                     "decision": decision,
                 }
             )
+            with open("data/validate_sums.json", "w") as f:
+                json.dump(output_values, f)
+            time.sleep(60)
         return JSONResponse(content={"result": output_values})
     else:
         return JSONResponse(content={"error": "Invalid file type"}, status_code=400)
